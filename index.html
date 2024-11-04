@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Contact Picker with Excel Upload</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Random Contact Picker</h1>
+  <div class="container">
+    <div class="input-section">
+      <label for="fileUpload">Upload an Excel file with Name, Email, and Phone columns:</label>
+      <input type="file" id="fileUpload" accept=".xlsx, .xls" />
+      <button id="spinButton">Pick a Random Contact</button>
+    </div>
+    <div class="result">
+      <h2>Picked Contact:</h2>
+      <p id="pickedEntry">Your picked contact will appear here</p>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
